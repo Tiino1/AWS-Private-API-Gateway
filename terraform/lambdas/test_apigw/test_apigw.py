@@ -2,8 +2,10 @@ import urllib.request
 
 def handler(event, context):
     URL_LIST = [
-        # TODO
-        # There are 2 (+ 1 bonus with route 53) urls to test
+        #TODO
+        # {api gateway stage invocation url} 
+        # {api gateway stage invocation url through VPC endpoint}
+        # {custom dns name with route53} 
     ]
 
     for url in URL_LIST:

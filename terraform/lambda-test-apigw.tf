@@ -31,14 +31,13 @@ resource "aws_iam_role" "test_apigw" {
   name = "lambda-${local.lambda_test_apigw}"
   assume_role_policy = <<EOF
 {
-  Version = "2012-10-17"
-  Statement = [
+  "Version": "2012-10-17"
+  "Statement": [
       {
-        Action = "sts:AssumeRole"
-        Effect = "Allow"
-        Sid    = ""
-        Principal = {
-            Service = "ec2.amazonaws.com"
+        "Action": "sts:AssumeRole"
+        "Effect": "Allow"
+        "Principal": {
+            "Service": "ec2.amazonaws.com"
         }
       }
     ]

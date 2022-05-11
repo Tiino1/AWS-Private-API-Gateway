@@ -37,7 +37,7 @@ resource "aws_iam_role" "backend" {
         "Action": "sts:AssumeRole",
         "Effect": "Allow",
         "Principal": {
-            "Service": "ec2.amazonaws.com"
+            "Service": "lambda.amazonaws.com"
         }
       }
     ]

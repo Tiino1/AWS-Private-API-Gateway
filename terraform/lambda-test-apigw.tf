@@ -37,7 +37,7 @@ resource "aws_iam_role" "test_apigw" {
         "Action": "sts:AssumeRole",
         "Effect": "Allow",
         "Principal": {
-            "Service": "ec2.amazonaws.com"
+            "Service": "lambda.amazonaws.com"
         }
       }
     ]

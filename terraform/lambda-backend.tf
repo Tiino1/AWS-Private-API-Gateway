@@ -73,7 +73,7 @@ EOF
 
 resource "aws_lambda_permission" "exec_backend_from_apigw" {
   statement_id  = "AllowExecutionFromAPIGateway"
-  function_name = local.lambda_backend
+  function_name = aws_lambda_function.backend.function_name
   action        = "lambda:InvokeFunction"
   principal     = "apigateway.amazonaws.com"
   source_arn    = "arn:aws:execugte-api:${data.aws_region.current.name}:${data.aws_caller_identity.current.account_id}:${aws_api_gateway_rest_api.apigw.id}/*/*"

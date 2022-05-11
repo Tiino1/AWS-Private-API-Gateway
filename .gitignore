@@ -1,0 +1,9 @@
+# TF state files
+*.tfstate
+*.tfstate.*
+
+# TF lock files
+**/.terraform.lock.hcl
+
+# Lambda artifacts
+**/artifacts/
